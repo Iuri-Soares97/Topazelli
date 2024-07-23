@@ -1,0 +1,87 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 500px; /* Ajuste a altura conforme necessário */
+}
+
+/* Swiper Container */
+.slider .swiper-container {
+  overflow: inherit;
+}
+
+/* Pagination */
+.slider .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+/* Navigation Buttons */
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  content: none !important;
+  display: none;
+}
+
+.slider .swiper-button-prev:hover,
+.slider .swiper-button-next:hover {
+  opacity: 0.9;
+}
+
+.slider .swiper-button-prev {
+  left: 15px;
+}
+
+.slider .swiper-button-next {
+  right: 15px;
+}
+
+/* Slide Images */
+.slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Garante que o slide tenha a altura total do contêiner */
+  margin-right: 10px; /* Adiciona um espaço entre os slides */
+}
+
+.slider .swiper-slide img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+  height: 100%; /* Ajusta a altura da imagem para preencher o contêiner */
+  object-fit: contain; /* Ajusta a imagem sem cortá-la */
+}
+
+#normal-size-image {
+  width: 80%; /* Ajusta a largura da imagem para seu tamanho normal */
+  height: auto; /* Ajusta a altura da imagem para seu tamanho normal */
+  object-fit: contain; /* Ajusta a imagem sem cortá-la */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .slider .swiper-button-prev,
+  .slider .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    text-align: center;
+  }
+}

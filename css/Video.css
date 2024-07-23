@@ -1,0 +1,20 @@
+.slider .swiper-slide video {
+  width: 25%; /* Ajusta a largura do vídeo para preencher o contêiner */
+  height: auto; /* Ajusta a altura do vídeo para manter a proporção */
+  padding: 5px; /* Adiciona padding para ajustar o vídeo dentro do contêiner */
+  background: black; /* Adiciona um fundo preto para os vídeos */
+}
+
+/* Estilos específicos para desktop */
+@media (min-width: 768px) {
+  .slider .swiper-slide video {
+    width: 25%; /* Largura dos vídeos para telas maiores que 768px */
+  }
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 767.98px) {
+  .slider .swiper-slide video {
+    width: 90%; /* Largura dos vídeos para telas menores que 768px */
+  }
+}

@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  padding: flex;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  font-family: "Vidaloka", serif;
+  margin-top: 20px;
+  color: aliceblue;
+}
